@@ -9,38 +9,25 @@ package packaged;
 import com.apple.eawt.AppEvent.OpenURIEvent;
 import com.apple.eawt.Application;
 import com.apple.eawt.OpenURIHandler;
-import com.jogamp.newt.event.MouseAdapter;
-import com.jogamp.newt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import com.sun.jna.Library;
 import com.sun.jna.Native;
 import java.awt.AWTException;
 import java.awt.Button;
-import java.awt.Component;
 import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.Label;
-import java.awt.Menu;
-import java.awt.MenuItem;
 import java.awt.Panel;
 import java.awt.PopupMenu;
 import java.awt.SystemTray;
 import java.awt.TextField;
-import java.awt.Toolkit;
 import java.awt.TrayIcon;
-import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.IOException;
 import javax.imageio.ImageIO;
-import javax.swing.JFrame;
-import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JPopupMenu;
-import javax.swing.JTextField;
 /**
  *
  * @author kiernanhagerhome
@@ -61,8 +48,8 @@ public class QuickNotify {
                     String uri = pEvent.getURI().toString();
                     String title = uri.substring(uri.indexOf("title:")+6, uri.substring(uri.indexOf("title:")+6).indexOf(","));
                     String stitle = uri.substring(uri.indexOf("subtitle:")+9, uri.substring(uri.indexOf("subtitle:")+9).indexOf(","));
-                    String msg = uri.substring(uri.indexOf("message:")+8, uri.substring(uri.indexOf("title:")+8).indexOf(","));
-                    String time = uri.substring(uri.indexOf("delay:")+6, uri.substring(uri.indexOf("title:")+6).indexOf(","));
+                    String msg = uri.substring(uri.indexOf("message:")+8, uri.substring(uri.indexOf("message:")+8).indexOf(","));
+                    String time = uri.substring(uri.indexOf("delay:")+6, uri.substring(uri.indexOf("delay:")+6).indexOf(","));
                     NsUserNotificationsBridge.instance.sendNotification(title, stitle, msg, Integer.parseInt(time));
         }
          });
