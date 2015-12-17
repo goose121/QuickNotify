@@ -8,6 +8,7 @@ Seconds, Minutes, and Hours denote the delay until the notification appears. To 
 [2]: https://raw.githubusercontent.com/kman14367/QuickNotify/master/src/packaged/iconbw.png
 ##License
 ---
+```
 This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
@@ -30,6 +31,7 @@ IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
 OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
+```
 
 
 Thanks to github user petesh, whose OSxUserNotificationCenter I am using the notification center access from, as well as StackOverflow user Thomas Tempelmann, whose method for handling custom URIs in Java I used.
