@@ -442,8 +442,17 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #90D355;
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #90D355 1px, #90D355 2px, rgba(0, 0, 0, 0) 2px);
+}
+
+special:hover {
+  text-decoration: none;
+  color: #90D355;
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #90D355 1px, #90D355 2px, rgba(0, 0, 0, 0) 2px);
 }
 
 h1.title {
@@ -550,8 +559,8 @@ p.tagline {
 }
 
 .download-bar a.code {
-  background: transparent url(../images/code.png) no-repeat 0 2px;
-  padding-left: 35px;
+/*  background: transparent url(../images/code.png) no-repeat 0 2px; */
+/*  padding-left: 35px;*/
   margin-top: 8px;
   display: block;
   float: left;
@@ -560,6 +569,10 @@ p.tagline {
   height: auto;
   opacity: 1;
   filter:alpha(opacity=100);  /* IE 5-7 */
+}
+a.code:hover {
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 3px, #90D355 3px, #90D355 4px, rgba(0, 0, 0, 0) 4px);
 }
 
 .current-section {
@@ -634,9 +647,9 @@ a.tar span {
 }
 
 a.code {
-  background: transparent url(../images/code.png) no-repeat 0 2px;
-  width: 30px;
-  height: 21px;
+/*  background: transparent url(../images/code.png) no-repeat 0 2px; */
+/*  width: 30px; */
+/*  height: 21px; */
   display: block;
   display: inline-block;
   text-indent: -10000px;
