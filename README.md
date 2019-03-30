@@ -1,12 +1,14 @@
-#QuickNotify
+# QuickNotify
 
 QuickNotify is a quick way to create Mac OS X notifications. It was created to be easy and streamlined. (And because I was bored.)
-##Usage
+## Usage
 
 To create a new notification, simply click on the menu bar icon with the QuickNotify icon (like this: ![Menubar Icon][2]). You will be greeted with a dialog that has the categories Title, Subtitle, Message, Seconds, Minutes, and Hours. Title is the large title at the top of the notification, Subtitle is directly beneath it, and, finally, Message is the smallest and lowest text area.
+
 Seconds, Minutes, and Hours denote the delay until the notification appears. To send it to the notification centre, just click send, or click cancel if you decide that you don't want to send it after all.
-[2]: https://raw.githubusercontent.com/kman14367/QuickNotify/master/src/packaged/iconbw.png
-##License
+
+[2]: https://raw.githubusercontent.com/goose121/QuickNotify/master/src/packaged/iconbw.png
+## License
 
 ```
 This is free and unencumbered software released into the public domain.
@@ -33,6 +35,6 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 ```
 
-##Attributions
+## Attributions
 
 Thanks to github user petesh, whose OSxUserNotificationCenter I am using the notification center access from, as well as StackOverflow user Thomas Tempelmann, whose method for handling custom URIs in Java I used.
